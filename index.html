@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,38 +9,46 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="styles.css" />
+    <title>Board de Tarefas - Projeto Final JS DNC</title>
   </head>
   <body>
     <main>
-      <div class="container">
-        <h1>Board de tarefas</h1>
-        <form id="taskForm">
-          <div class="input-group">
-            <input
-              type="text"
-              placeholder="Nome da tarefa"
-              id="inputTarefa"
-              name="tarefa"
-              required
-            />
-            <input
-              type="text"
-              placeholder="Etiqueta"
-              id="inputEtiqueta"
-              name="etiqueta"
-            />
-            <button type="submit">+</button>
-          </div>
+      <h1>Board de tarefas</h1>
+      <section id="create-todo-section">
+        <form id="create-todo-form">
+          <input
+            type="text"
+            id="description"
+            name="description"
+            class="input-description"
+            aria-label="Digite sua Tarefa."
+            placeholder="Nome da Tarefa"
+          />
+          <input
+            type="text"
+            id="etiqueta"
+            name="Etiqueta"
+            class="input-description"
+            aria-label="Etiqueta"
+            placeholder="Etiqueta"
+          />
+          <button
+            type="submit"
+            aria-label="Cadastrar-tarefa"
+            class="add-task-btn"
+          >
+            +
+          </button>
         </form>
+      </section>
+      <section class="todo-list-section">
+        <ul id="todo-list"></ul>
+      </section>
 
-        <ul id="taskList"></ul>
-
-        <div class="task-counter">
-          <span id="completedCounter">0</span> tarefas concluídas
-        </div>
-      </div>
+      <footer>
+        <p id="contador-tarefas">0 tarefa concluída</p>
+      </footer>
     </main>
     <script src="script.js"></script>
   </body>
