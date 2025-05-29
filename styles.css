@@ -10,5 +10,58 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 100vh;
+  padding: 20px;
+}
+main {
+  background: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #11175e;
+}
+
+#create-todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.input-description {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #b1bacb;
+}
+
+.add-task-btn {
+  background: #4a6bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.add-task-btn:hover {
+  background: #3a5bef;
+}
+
+.todo-list-section {
+  margin-bottom: 2rem;
+}
+
+footer {
+  text-align: end;
+  color: #b1bacb;
 }
