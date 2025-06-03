@@ -48,6 +48,7 @@ h1 {
   border: none;
   border-radius: 5px;
   width: 40px;
+  height: 45px;
   font-size: 1.5rem;
   cursor: pointer;
   transition: background 0.3s;
@@ -64,4 +65,112 @@ h1 {
 footer {
   text-align: end;
   color: #b1bacb;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+#todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1rem;
+  background-color: #f5f5f5;
+  gap: 1rem;
+  border-radius: 1rem;
+  color: rgba(0, 23, 71, 1);
+  line-height: 110.00000000000001%;
+}
+
+#task-text {
+  flex-grow: 1;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.task-actions button {
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#contador-tarefas {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: rgba(177, 186, 203, 1);
+  text-align: right;
+}
+
+.complete-btn {
+  background: rgba(45, 112, 253, 1);
+  color: white;
+}
+
+.complete-btn:hover {
+  background: rgba(45, 112, 253, 1);
+}
+
+/* Espaçamento entre os elementos da tarefa */
+.todo-item {
+  padding: 1rem;
+  /* Espaçamento interno */
+  margin-bottom: 1rem;
+  /* Espaço entre tarefas */
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container da descrição + metadados */
+.task-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  /* Espaço entre a descrição e a linha de metadados (tag + data) */
+}
+
+/* Metadados (tag + data) */
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* Espaço entre a tag e a data */
+  color: rgba(177, 186, 203, 1);
+}
+
+/* Estilo da tag */
+.task-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.5rem;
+  font-weight: 500;
+  border-style: solid;
+}
+
+/* Estilo da data */
+.task-date {
+  font-size: 0.8rem;
+}
+
+#create-todo-form {
+  margin-bottom: 1.5rem;
+}
+
+/* ESPAÇAMENTO MOBILE - Garante 1rem entre elementos */
+.input-description,
+#etiqueta {
+  margin-bottom: 1rem;
+  /* Espaçamento de 1rem abaixo de cada input */
 }
